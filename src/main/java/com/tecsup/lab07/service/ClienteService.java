@@ -10,3 +10,4 @@ public interface ClienteService {
     void actualizarCliente(Cliente cliente);
     void eliminarCliente(int id);
 }
+

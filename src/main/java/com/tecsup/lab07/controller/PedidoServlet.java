@@ -70,6 +70,7 @@ public class PedidoServlet extends HttpServlet {
             throws ServletException, IOException {
         request.setAttribute("clientes", clienteService.listarTodosClientes());
         request.getRequestDispatcher("/pedidoNuevo.jsp").forward(request, response);
+        System.out.println("Clientes cargados: " + clienteService.listarTodosClientes().size());
     }
 
     private void guardarPedido(HttpServletRequest request, HttpServletResponse response)
